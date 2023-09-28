@@ -1,0 +1,71 @@
+<div class="blog-post-hero-container container">
+  <div class="hero-container">
+    <div class="hero-image">
+      <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.title }}" />
+    </div>
+  </div>
+  
+  <div class="article-details-container">
+    <h2>{{ article.title | upcase }}</h2>
+    <p>{{ article.excerpt }}</p>
+    <p class="author-byline">By: {{ article.author }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Post Hero",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Blog Post Hero"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.blog-post-hero-container {
+  text-align: center;
+  background-color: #f4f1ec;
+  display: flex;
+  flex-direction: column;
+}
+  
+.hero-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  position: relative;
+  max-height: 80vh;
+  overflow: hidden; /* Prevent the image from overflowing the container */
+}
+
+.hero-image img {
+  width: auto;
+  height: 100%;
+  max-width: 100%; /* Ensure the image maintains its aspect ratio */
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: auto;
+}
+
+.article-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .article-details-container {
+    width: 90%;
+  }
+}
+{% endstylesheet %}

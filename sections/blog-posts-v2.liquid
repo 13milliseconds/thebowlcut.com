@@ -1,0 +1,104 @@
+{% schema %}
+  {
+    "name": "Blog Posts v2",
+    "class": "blog-posts-bg",
+    "settings": [],
+    "presets": [
+      {
+      "name": "Blog Posts v2"
+      }
+    ]
+  }
+{% endschema %}
+
+<div class="blog-posts-container container">
+  <div class="grid-container">
+    {% for article in blog.articles %}
+      <div class="grid-item">
+        <a href="{{ article.url }}">
+          <div class="image-container">
+            <div class="aspect-ratio">
+              <img src="{{ article.image.src | image_url }}" alt="{{ article.title }}" loading="lazy" />
+            </div>
+          </div>
+          <h4>{{ article.title }}</h4>
+          <p>{{ article.excerpt }}</p>
+          <p class="read-more">Read More</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.blog-posts-bg {
+  background-color: #F4F1EC;
+}
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.grid-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Maintain 1:1 aspect ratio */
+  overflow: hidden;
+}
+
+.aspect-ratio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-item h4 {
+  margin-top: 1rem;
+}
+
+.grid-item p {
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+  
+</style>

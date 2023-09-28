@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "98441767-87db-435f-b946-e6e79b408371": {
+      "type": "blog-nav",
+      "custom_css": [
+        ".banner-container h1,.banner-container p {color: #1f3451;}",
+        ".banner-container {flex-direction: column; width: 100%; border: none !important;}"
+      ],
+      "settings": {
+        "blog_description": ""
+      }
+    },
+    "48af7e66-41ad-4c59-9cc7-fa213cd882cc": {
+      "type": "recipe-hero",
+      "custom_css": [
+        ".recipe-hero-container h1,.recipe-hero-container p,.recipe-hero-container span {color: #1f3451;}",
+        ".recipe-hero-container {border: none !important; background-color: #f4f1ec;}",
+        ".recipe-hero-container p,.recipe-hero-container span {font-family: \"AcuminVariableConcept\" !important;}",
+        ".recipe-hero-container span {font-weight: 600 !important;}"
+      ],
+      "settings": {
+      }
+    },
+    "2a52506e-f676-4712-82a0-d1fc5d2af3ab": {
+      "type": "recipe-two-col",
+      "custom_css": [
+        ".recipe-container {border: none !important;}",
+        ".recipe-container h2 {color: #1f3451; text-align: left;}",
+        ".recipe-container ol,.recipe-container ul,.recipe-container li,.recipe-container p {color: black; font-family: AcuminVariableConcept !important;}",
+        ".content-container {font-family: AcuminVariableConcept !important;}",
+        ".content-container p {margin-bottom: 0px !important;}",
+        ".content-container ol {padding-left: 1em;}",
+        ".content-container li {text-indent: -1em;}",
+        ".content-container li::first-line {text-indent: 1em;}"
+      ],
+      "settings": {
+        "ingredients": "shopify:\/\/shop_images\/ingredients.svg",
+        "instructions": "shopify:\/\/shop_images\/instructions_878b21ce-d120-4c2c-ac9d-1fed674242ee.svg"
+      }
+    },
+    "main": {
+      "type": "main-article-template",
+      "custom_css": [
+        ".container {border: none !important; color: #1f3451; padding: 2rem 8rem; width: 100%;}",
+        "p,h1,h2,h3,h4,li {text-align: left; color: #1f3451;}",
+        "p > img {width: 100%;}",
+        "p > video {width: 100%;}"
+      ],
+      "settings": {
+        "show_blog_author": false,
+        "show_blog_date": false,
+        "show_blog_tag": false,
+        "social_sharing_blog": false,
+        "blog_meta_color": "#000000",
+        "blog_meta_icon_color": "#000000"
+      }
+    },
+    "b6fc3728-166d-4dea-99bd-0d1a3ee8413e": {
+      "type": "product-block",
+      "settings": {
+      }
+    },
+    "2281db96-17b7-40b1-960b-a769f2318116": {
+      "type": "divider",
+      "settings": {
+        "full": true,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "divider_style": "solid",
+        "divider_alignment": "text-center",
+        "section_heading": "",
+        "heading_typography": "h2",
+        "divider_bottom_width": 90,
+        "divider_height": 1,
+        "divider_arrow_alignment": -17,
+        "divider_bottom_alignment": -10,
+        "section_heading_color": "",
+        "divider_color": "#e33048",
+        "custom_class_name": ""
+      }
+    },
+    "f714317e-6e89-4607-a1f8-6a0fb2fd4c4b": {
+      "type": "related-blog-posts",
+      "custom_css": [
+        ".related-blog-posts-container h1,.related-blog-posts-container h4,.related-blog-posts-container p {color: #1f3451;}",
+        ".related-blog-posts-container h4 {text-align: left; padding-left: 0; line-height: 135%;}",
+        ".related-blog-posts-container p {font-family: \"AcuminVariableConcept\"; text-align: left; padding-left: 0; line-height: 125%;}",
+        ".related-blog-posts-container.container {border: none !important; color: #1f3451; padding: 2rem 8rem; width: 100%;}"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "98441767-87db-435f-b946-e6e79b408371",
+    "48af7e66-41ad-4c59-9cc7-fa213cd882cc",
+    "2a52506e-f676-4712-82a0-d1fc5d2af3ab",
+    "main",
+    "b6fc3728-166d-4dea-99bd-0d1a3ee8413e",
+    "2281db96-17b7-40b1-960b-a769f2318116",
+    "f714317e-6e89-4607-a1f8-6a0fb2fd4c4b"
+  ]
+}

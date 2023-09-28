@@ -1,0 +1,801 @@
+{
+  "sections": {
+    "8743da91-6f8b-42c3-a583-113f15231697": {
+      "type": "home-video-banner",
+      "custom_css": [
+        ".home-video-banner .container {flex-direction: column !important; background-color: #f4f1ec;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "{{ shop.brand.colors.primary[0].background }}",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "rgba(0,0,0,0)",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "block_title": "FOR PEOPLE WITH TASTEBUDS.",
+        "block_sub_title": "",
+        "block_description": "",
+        "block_button_text": "Shop Now",
+        "block_button_link": "shopify:\/\/collections\/all",
+        "content_position": "center",
+        "block_text_align": "text-center",
+        "show_image": false,
+        "video_format": "iframe",
+        "video_url": "",
+        "iframe_url": "https:\/\/player.vimeo.com\/video\/705647930?dnt=1&id=705647930&autopause=0&transparent=0&autoplay=1&loop=1&muted=1&badge=0&byline=0&portrait=0&title=0&background=0",
+        "video_height": "719",
+        "overlay_style": "with-overlay",
+        "enable_box_shadow": false,
+        "border_radius": "0",
+        "banner_heading_color": "#ffffff",
+        "banner_sub_heading_color": "",
+        "banner_description_color": "",
+        "banner_button_bg_color": "",
+        "banner_button_text_color": "#ffffff",
+        "banner_button_hover_bg_color": "",
+        "banner_button_hover_text_color": "",
+        "video_overlay_color": "",
+        "video_overlay_transparency": "0.5",
+        "icon_bg_color": "",
+        "icon_color": "",
+        "icon_bg_color_hover": "",
+        "icon_color_hover": "",
+        "custom_class_name": "video-banner-home"
+      }
+    },
+    "0c27291f-a5fe-4636-8cbe-54f0809a9d2f": {
+      "type": "home-html-text",
+      "custom_css": [
+        ".home-html-text .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "NEXT GEN ASIAN AMERICAN FLAVORS",
+        "section_sub_heading": "",
+        "section_description": "Inspired by the childhood staples we’re proud to pass on, Bowlcut is helping to define what eating well tastes like for a new generation.",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "html": "<!--<div id='insta-feed'><\/div>-->",
+        "custom_class_name": "philosophy-text"
+      }
+    },
+    "16283075012fbe18e1": {
+      "type": "home-product-carousel",
+      "custom_css": [
+        ".home-product-carousel .dt-sc-section-wrapper {padding-top: 0px !important;}",
+        ".row.product-carousel-style {border-bottom: none !important;}",
+        ".home-product-carousel .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "#000000",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "grouped_content_bg": "",
+        "grouped_column_gap": "30",
+        "grouped_content_padding": "0",
+        "group_border_radius": "0",
+        "enable_group_box_shadow": false,
+        "reverse_column": false,
+        "content_width": "30\/70",
+        "lap_content_width": "35\/65",
+        "additional_block_background_color": "",
+        "additional_block_box_shadow": false,
+        "additional_content_padding": "0",
+        "additional_block_border_radius": "0",
+        "enable_main_content": true,
+        "main_block_background_color": "",
+        "enable_main_block_box_shadow": false,
+        "main_block_border_radius": "",
+        "main_content_padding": "",
+        "collection": "frontpage",
+        "column_gap": "30",
+        "border_radius": "0",
+        "enable_list_view": false,
+        "grid": "3",
+        "post_limit": 3,
+        "enable_slider": false,
+        "items_per_view": 3,
+        "rows": 1,
+        "slider_autoplay": 0,
+        "enable_auto_height": false,
+        "dots": false,
+        "carousel_pagination_alignment": "center_pagination",
+        "carousel_pagination_bottom_alignment": "outside_element",
+        "arrows": false,
+        "nav_arrow_position": "navigation-top-right",
+        "center_nav_arrow_alignment": "inside_container",
+        "navigation_button_color": "",
+        "navigation_button_icon_color": "",
+        "navigation_button_hover_color": "",
+        "navigation_button_hover_icon_color": "",
+        "navigation_dot_color": "",
+        "navigation_dot_active_color": "",
+        "custom_class_name": "product-carousel-style"
+      }
+    },
+    "2278b9e2-64f5-4f2e-a173-8c33023a0568": {
+      "type": "home-featured-collection",
+      "blocks": {
+        "template--15760234873015__2278b9e2-64f5-4f2e-a173-8c33023a0568-16828976744c74c847-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "block_button_text": "Shop Now",
+            "block_text_align": "text-center",
+            "content_position": "center",
+            "reverse_column": false,
+            "block_banner_bg": "",
+            "block_content_box_bg": "",
+            "block_heading_color": "",
+            "block_sub_heading_color": "",
+            "block_description_color": "",
+            "block_button_bg_color": "",
+            "block_button_text_color": "",
+            "block_button_hover_bg_color": "",
+            "block_button_hover_text_color": "",
+            "overlay_style": "use_overlay",
+            "overlay_color": "",
+            "overlay_opacity": "0.5",
+            "rotation_degree": "180"
+          }
+        },
+        "template--15760234873015__2278b9e2-64f5-4f2e-a173-8c33023a0568-16828976744c74c847-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "block_button_text": "Shop Now",
+            "block_text_align": "text-center",
+            "content_position": "center",
+            "reverse_column": false,
+            "block_banner_bg": "",
+            "block_content_box_bg": "",
+            "block_heading_color": "",
+            "block_sub_heading_color": "",
+            "block_description_color": "",
+            "block_button_bg_color": "",
+            "block_button_text_color": "",
+            "block_button_hover_bg_color": "",
+            "block_button_hover_text_color": "",
+            "overlay_style": "use_overlay",
+            "overlay_color": "",
+            "overlay_opacity": "0.5",
+            "rotation_degree": "180"
+          }
+        }
+      },
+      "block_order": [
+        "template--15760234873015__2278b9e2-64f5-4f2e-a173-8c33023a0568-16828976744c74c847-0",
+        "template--15760234873015__2278b9e2-64f5-4f2e-a173-8c33023a0568-16828976744c74c847-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": true,
+        "background_image": "shopify:\/\/shop_images\/JWC_04_cropped.jpg",
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "INTRODUCING: BOWLCUT x JI WON CHOI",
+        "section_sub_heading": "",
+        "section_description": "“Bowlcut x Ji Won Choi has become pretty dear to my heart — probably because its very essence is inspired by my own mom. Nothing will ever top her homemade cooking, but I wanted to create a sauce reminiscent of her food and my own style. It’s especially perfect on days when I’m missing her a little extra.”-JWC",
+        "section_button_text": "Read more here",
+        "section_button_link": "shopify:\/\/pages\/bowlcut-jiwonchoi",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "#ffffff",
+        "section_description_color": "#ffffff",
+        "section_button_bg_color": "#203451",
+        "section_button_text_color": "#ffffff",
+        "section_button_hover_bg_color": "#d8000c",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "grid": "2",
+        "block_banner_style": "overlay",
+        "column_gap": "30",
+        "equal_height": false,
+        "overlay_style_height": "500",
+        "enable_box_shadow": false,
+        "border_radius": "0",
+        "content_width": "50\/50",
+        "lap_content_width": "35\/65",
+        "enable_slider": false,
+        "enable_auto_height": true,
+        "slider_autoplay": 0,
+        "items_per_view": 1,
+        "dots": true,
+        "carousel_pagination_alignment": "center_pagination",
+        "arrows": true,
+        "nav_arrow_position": "center-navigation",
+        "center_nav_arrow_alignment": "outside_container",
+        "navigation_button_color": "",
+        "navigation_button_icon_color": "",
+        "navigation_button_hover_color": "",
+        "navigation_button_hover_icon_color": "",
+        "navigation_dot_color": "",
+        "navigation_dot_active_color": "",
+        "custom_class_name": ""
+      }
+    },
+    "a37ed987-c844-4316-9a83-414fa98a9e9d": {
+      "type": "divider",
+      "custom_css": [
+        ".home-divider .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "divider_style": "solid",
+        "divider_alignment": "text-center",
+        "section_heading": "",
+        "heading_typography": "h6",
+        "divider_bottom_width": 100,
+        "divider_height": 1,
+        "divider_arrow_alignment": -17,
+        "divider_bottom_alignment": -10,
+        "section_heading_color": "",
+        "divider_color": "#e33048",
+        "custom_class_name": ""
+      }
+    },
+    "5c759609-b93b-4e2a-bb13-c481d9ac9694": {
+      "type": "home-html-text",
+      "custom_css": [
+        ".dt-sc-heading {margin-bottom: 0;}",
+        ".home-html-text .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "OUR PHILOSOPHY",
+        "section_sub_heading": "",
+        "section_description": "Bowlcut sauces are based on family (restaurant) recipes and inspired by the best of our parents’ cooking. They’re abundantly rich and delightful in flavor, yet thoughtfully prepared. Just like the many generations of Asian sauciers who came before us, we rely on thoughtful ingredients to make rich, complex, layered flavors — without any of the fake stuff. No fake additives, flattened flavor notes, or shortcuts. Only Bowlcuts.",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "html": "<!--<div id='insta-feed'><\/div>-->",
+        "custom_class_name": "philosophy-text"
+      }
+    },
+    "5af50c69-d136-4b30-bdef-b091901b9168": {
+      "type": "flex-images",
+      "blocks": {
+        "9bca4aa5-1633-4b3c-b9a7-fee8f949a04b": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/made-in-usa.svg"
+          }
+        },
+        "7b34e173-14c6-4632-9fb6-23ac9ca78392": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/low-sodium-sugar.svg"
+          }
+        },
+        "4408c86b-deb0-402a-b24d-05b634d1194e": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vegan.svg"
+          }
+        }
+      },
+      "block_order": [
+        "9bca4aa5-1633-4b3c-b9a7-fee8f949a04b",
+        "7b34e173-14c6-4632-9fb6-23ac9ca78392",
+        "4408c86b-deb0-402a-b24d-05b634d1194e"
+      ],
+      "custom_css": [
+        ".flex-images-container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+      }
+    },
+    "0186f609-91ab-4078-8b79-e8d5ebf705f8": {
+      "type": "divider",
+      "custom_css": [
+        ".home-divider .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "divider_style": "solid",
+        "divider_alignment": "text-center",
+        "section_heading": "",
+        "heading_typography": "h6",
+        "divider_bottom_width": 100,
+        "divider_height": 1,
+        "divider_arrow_alignment": -17,
+        "divider_bottom_alignment": -10,
+        "section_heading_color": "",
+        "divider_color": "#e33048",
+        "custom_class_name": ""
+      }
+    },
+    "06e64696-bbd5-4120-8edb-d583cc7331fc": {
+      "type": "home-html-text",
+      "custom_css": [
+        ".dt-sc-heading {margin-bottom: 0;}",
+        ".home-html-text .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "AS SEEN IN",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "html": "<!--<div id='insta-feed'><\/div>-->",
+        "custom_class_name": ""
+      }
+    },
+    "bb38f8ed-5f97-4c76-b7c2-293c9f8a3948": {
+      "type": "two-row-gallery",
+      "blocks": {
+        "5b008eb5-19ab-4b72-8db6-a89f19e7c3dc": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_3.webp"
+          }
+        },
+        "00b235f2-7a51-4917-abee-5d9a176612ec": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_4.webp"
+          }
+        },
+        "ce748314-21b7-4d46-8b55-521ded7a0dcc": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "5b008eb5-19ab-4b72-8db6-a89f19e7c3dc",
+        "00b235f2-7a51-4917-abee-5d9a176612ec",
+        "ce748314-21b7-4d46-8b55-521ded7a0dcc"
+      ],
+      "custom_css": [
+        ".gallery-row {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+      }
+    },
+    "11f6d882-bc42-474b-854d-efe8ebe27607": {
+      "type": "two-row-gallery",
+      "blocks": {
+        "0b2a04fc-8fdc-41ad-9b7c-c29cab293ceb": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_6.webp"
+          }
+        },
+        "a61670c0-0e39-4385-b53e-f4eaaf6b2aa4": {
+          "type": "image_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "0b2a04fc-8fdc-41ad-9b7c-c29cab293ceb",
+        "a61670c0-0e39-4385-b53e-f4eaaf6b2aa4"
+      ],
+      "custom_css": [
+        ".gallery-row {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+      }
+    },
+    "220019ee-896c-482a-a7de-37ed2edec064": {
+      "type": "divider",
+      "custom_css": [
+        ".home-divider .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "divider_style": "solid",
+        "divider_alignment": "text-center",
+        "section_heading": "",
+        "heading_typography": "h6",
+        "divider_bottom_width": 100,
+        "divider_height": 1,
+        "divider_arrow_alignment": -17,
+        "divider_bottom_alignment": -10,
+        "section_heading_color": "",
+        "divider_color": "#e33048",
+        "custom_class_name": ""
+      }
+    },
+    "e381a5d9-1229-4588-9881-a5b997b7a275": {
+      "type": "home-deal-banner",
+      "custom_css": [
+        ".home-deal-banner .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "heading_position": "text-center",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "block_image": "shopify:\/\/shop_images\/Web_Product_Chart.png",
+        "show_image": true,
+        "block_title": "",
+        "block_sub_title": "",
+        "block_description": "",
+        "deal_end_date": "",
+        "deals_border_radius": "0",
+        "block_button_text": "",
+        "block_button_link": "",
+        "block_text_align": "text-center",
+        "title_color": "",
+        "sub_title_color": "",
+        "description_color": "",
+        "button_bg_color": "",
+        "button_text_color": "",
+        "button_hover_bg_color": "",
+        "button_hover_text_color": "",
+        "deals_section_bg_color": "",
+        "deals_section_timer_color": "",
+        "deals_section_timer_duration_color": "",
+        "custom_class_name": ""
+      }
+    },
+    "b069ee26-b2e2-4b10-a8a3-7bfe26b3d39f": {
+      "type": "home-deal-banner",
+      "disabled": true,
+      "custom_css": [
+        ".home-deal-banner .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "heading_position": "text-center",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "block_image": "shopify:\/\/shop_images\/download_10.webp",
+        "show_image": true,
+        "block_title": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0534\/9815\/1095\/files\/download_11_256x256_crop_center.webp?v=1673299754\">",
+        "block_sub_title": "",
+        "block_description": "",
+        "deal_end_date": "",
+        "deals_border_radius": "0",
+        "block_button_text": "",
+        "block_button_link": "",
+        "block_text_align": "text-center",
+        "title_color": "",
+        "sub_title_color": "",
+        "description_color": "",
+        "button_bg_color": "",
+        "button_text_color": "",
+        "button_hover_bg_color": "",
+        "button_hover_text_color": "",
+        "deals_section_bg_color": "",
+        "deals_section_timer_color": "",
+        "deals_section_timer_duration_color": "",
+        "custom_class_name": "two-images-section"
+      }
+    },
+    "a99077cf-ceee-456c-9897-d48e27cd8010": {
+      "type": "home-html-text",
+      "custom_css": [
+        ".home-html-text .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "SHOP NOW",
+        "section_button_link": "shopify:\/\/collections\/all",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "html": "<div class=\"cat-img\">\n<p>Shop the Freshest Cuts<\/p>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0534\/9815\/1095\/files\/download_12.webp\">\n<\/div>",
+        "custom_class_name": "cat-img-section"
+      }
+    },
+    "899635f5-3582-4c23-b9c2-32fbe54848ec": {
+      "type": "home-product-carousel",
+      "custom_css": [
+        ".row.product-carousel-style {padding: 70px 0 50px !important; border-bottom: 1px solid #e33048;}",
+        ".home-product-carousel .dt-sc-section-wrapper {padding-top: 0px !important;}",
+        ".bottom-mench {border: none !important;}",
+        ".home-product-carousel .container {background-color: #f4f1ec !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "",
+        "section_sub_heading_color": "",
+        "section_description_color": "#000000",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "grouped_content_bg": "",
+        "grouped_column_gap": "30",
+        "grouped_content_padding": "0",
+        "group_border_radius": "0",
+        "enable_group_box_shadow": false,
+        "reverse_column": false,
+        "content_width": "30\/70",
+        "lap_content_width": "35\/65",
+        "additional_block_background_color": "",
+        "additional_block_box_shadow": false,
+        "additional_content_padding": "0",
+        "additional_block_border_radius": "0",
+        "enable_main_content": true,
+        "main_block_background_color": "",
+        "enable_main_block_box_shadow": false,
+        "main_block_border_radius": "",
+        "main_content_padding": "",
+        "collection": "merch",
+        "column_gap": "30",
+        "border_radius": "0",
+        "enable_list_view": false,
+        "grid": "3",
+        "post_limit": 3,
+        "enable_slider": false,
+        "items_per_view": 3,
+        "rows": 1,
+        "slider_autoplay": 0,
+        "enable_auto_height": false,
+        "dots": false,
+        "carousel_pagination_alignment": "center_pagination",
+        "carousel_pagination_bottom_alignment": "outside_element",
+        "arrows": false,
+        "nav_arrow_position": "navigation-top-right",
+        "center_nav_arrow_alignment": "inside_container",
+        "navigation_button_color": "",
+        "navigation_button_icon_color": "",
+        "navigation_button_hover_color": "",
+        "navigation_button_hover_icon_color": "",
+        "navigation_dot_color": "",
+        "navigation_dot_active_color": "",
+        "custom_class_name": "product-carousel-style bottom-mench"
+      }
+    },
+    "17f255c9-d65d-49b3-95e3-4900de16c6a7": {
+      "type": "slideshow",
+      "blocks": {
+        "b9da85e6-4f5f-483b-8813-50ee285df8bb": {
+          "type": "Slider",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copy_of_000040370014_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Copy_of_000040370014_1.jpg",
+            "mobile_bg_clr": "",
+            "text_alignment": "text-center",
+            "content_position": "dt-sc-flex-center",
+            "show_image": false,
+            "title_2": "",
+            "subheading_color": "",
+            "subheading_size": "20",
+            "title": "",
+            "heading_color": "",
+            "heading_size": "54",
+            "desc": "",
+            "desc_color": "",
+            "desc_size": "14",
+            "button": "",
+            "link": "",
+            "btn_bg_color": "",
+            "btn_txt_color": "",
+            "btn_hoverbg_color": "",
+            "btn_hovertxt_color": "",
+            "button_2": "",
+            "link_2": "",
+            "btn_bg_color_2": "",
+            "btn_txt_color_2": "",
+            "btn_hoverbg_color_2": "",
+            "btn_hovertxt_color_2": "",
+            "slide_content_bg": ""
+          }
+        }
+      },
+      "block_order": [
+        "b9da85e6-4f5f-483b-8813-50ee285df8bb"
+      ],
+      "disabled": true,
+      "settings": {
+        "full": true,
+        "spacing_both_ends": false,
+        "margin": "0,0",
+        "slider_height": 850,
+        "slider_height_lap": 700,
+        "slider_height_tab": 600,
+        "slider_height_mobile": 350,
+        "content_within_container": true,
+        "enable_box_shadow": false,
+        "border_radius": "0",
+        "content_border_radius": "0",
+        "autoplay": false,
+        "slideshow_speed": "5000",
+        "dots": false,
+        "carousel_pagination_alignment": "center_pagination",
+        "carousel_pagination_bottom_alignment": "inside_element",
+        "arrows": true,
+        "nav_arrow_position": "navigation-bottom-center",
+        "center_nav_arrow_alignment": "inside_container",
+        "navigation_button_color": "",
+        "navigation_button_icon_color": "",
+        "navigation_button_hover_color": "",
+        "navigation_button_hover_icon_color": "",
+        "navigation_dot_color": "",
+        "navigation_dot_active_color": "",
+        "custom_class_name": ""
+      }
+    }
+  },
+  "order": [
+    "8743da91-6f8b-42c3-a583-113f15231697",
+    "0c27291f-a5fe-4636-8cbe-54f0809a9d2f",
+    "16283075012fbe18e1",
+    "2278b9e2-64f5-4f2e-a173-8c33023a0568",
+    "a37ed987-c844-4316-9a83-414fa98a9e9d",
+    "5c759609-b93b-4e2a-bb13-c481d9ac9694",
+    "5af50c69-d136-4b30-bdef-b091901b9168",
+    "0186f609-91ab-4078-8b79-e8d5ebf705f8",
+    "06e64696-bbd5-4120-8edb-d583cc7331fc",
+    "bb38f8ed-5f97-4c76-b7c2-293c9f8a3948",
+    "11f6d882-bc42-474b-854d-efe8ebe27607",
+    "220019ee-896c-482a-a7de-37ed2edec064",
+    "e381a5d9-1229-4588-9881-a5b997b7a275",
+    "b069ee26-b2e2-4b10-a8a3-7bfe26b3d39f",
+    "a99077cf-ceee-456c-9897-d48e27cd8010",
+    "899635f5-3582-4c23-b9c2-32fbe54848ec",
+    "17f255c9-d65d-49b3-95e3-4900de16c6a7"
+  ]
+}

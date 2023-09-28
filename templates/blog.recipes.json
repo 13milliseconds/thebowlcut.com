@@ -1,0 +1,181 @@
+{
+  "sections": {
+    "041c9bd7-8c45-44fa-8f5d-d16c27cc8c3e": {
+      "type": "blog-nav",
+      "custom_css": [
+        ".tag-links > a {font-family: neue-haas-grotesk-display, sans-serif !important; color: #1f3451; font-weight: 600;}",
+        ".banner-container h1,.banner-container p {color: #1f3451 !important;}",
+        ".banner-container p {font-family: \"AcuminVariableConcept\" !important;}",
+        ".banner-container {width: 100%; flex-direction: column; border: none !important;}"
+      ],
+      "settings": {
+        "blog_description": ""
+      }
+    },
+    "5208e647-13f0-4258-9013-f207e51462d1": {
+      "type": "featured-blog-post",
+      "custom_css": [
+        ".featured-post-container {border: none !important; background-color: #f4f1ec; padding-bottom: 3rem; width: 100%;}",
+        ".featured-post-container h2,.featured-post-container a {color: #1f3451;}",
+        ".featured-post-container span,.featured-post-container a,.featured-post-container p {font-family: \"AcuminVariableConcept\" !important;}",
+        ".featured-post-container h2 {margin-top: 0; padding-top: 0; text-align: left;}"
+      ],
+      "settings": {
+        "featured_post": "recipes\/sizzled-scallion-chili-dip"
+      }
+    },
+    "e73cf01f-04ac-45d8-a5fa-04560211b588": {
+      "type": "blog-posts-v2",
+      "custom_css": [
+        ".blog-posts-container {border: none !important; background-color: #f4f1ec; width: 100%;}",
+        ".blog-posts-container h4,.blog-posts-container p {color: #1f3451; text-align: left;}",
+        ".blog-posts-container p {font-family: \"AcuminVariableConcept\" !important; line-height: 125%;}",
+        ".blog-posts-container h4 {line-height: 135%;}"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-blog-template",
+      "disabled": true,
+      "blocks": {
+        "e647a523-a5ba-4008-bc31-a8f436883b14": {
+          "type": "articles",
+          "settings": {
+            "title": "Recent articles",
+            "limit": 10
+          }
+        }
+      },
+      "block_order": [
+        "e647a523-a5ba-4008-bc31-a8f436883b14"
+      ],
+      "settings": {
+        "blog_results_per_page": 10,
+        "blog_show_author": false,
+        "blog_show_date": false,
+        "blog_comments": false,
+        "blog_show_tag": false,
+        "blog_show_button": true,
+        "blog_show_description": true,
+        "enable_blog_icons": false,
+        "block_banner_style": "grid-style",
+        "grid": "3",
+        "text_position": "text-start",
+        "column_gap": "30",
+        "enable_box_shadow": false,
+        "content_width": "50\/50",
+        "lap_content_width": "40\/60",
+        "vertical_position": "vertical-top",
+        "overlay_style_height": "400",
+        "overlay_style": "use_overlay",
+        "overlay_color": "",
+        "overlay_opacity": "0.5",
+        "rotation_degree": "180",
+        "split_blog_layout": false,
+        "split_gap": "30"
+      }
+    },
+    "7a36cd27-d8f2-476f-8e13-3d1ab8f77e64": {
+      "type": "home-featured-blog",
+      "disabled": true,
+      "custom_css": [
+        ".container {border: none !important;}"
+      ],
+      "settings": {
+        "full": false,
+        "spacing_both_ends": false,
+        "padding": "0,0",
+        "margin": "0,0",
+        "show_background_image": false,
+        "background_style": "default",
+        "enable_overlay": false,
+        "background_color": "",
+        "overlay_transparency": "0.5",
+        "section_heading": "",
+        "section_sub_heading": "",
+        "section_description": "",
+        "section_button_text": "",
+        "section_button_link": "",
+        "section_heading_color": "#ffffff",
+        "section_sub_heading_color": "",
+        "section_description_color": "",
+        "section_button_bg_color": "",
+        "section_button_text_color": "",
+        "section_button_hover_bg_color": "",
+        "section_button_hover_text_color": "",
+        "heading_position": "text-center",
+        "blog": "stories",
+        "blog_show_author": false,
+        "blog_show_date": false,
+        "blog_comments": false,
+        "blog_show_tag": false,
+        "blog_show_button": false,
+        "blog_show_description": false,
+        "enable_blog_icons": false,
+        "block_banner_style": "grid-style",
+        "post_limit": 6,
+        "grid": "3",
+        "text_position": "text-start",
+        "enable_box_shadow": false,
+        "vertical_position": "vertical-center",
+        "content_width": "50\/50",
+        "lap_content_width": "40\/60",
+        "overlay_style_height": 300,
+        "overlay_style": "use_overlay",
+        "overlay_color": "",
+        "overlay_opacity": "0.5",
+        "rotation_degree": "180",
+        "split_blog_layout": false,
+        "split_gap": "30",
+        "enable_masonry_grid": false,
+        "main_banner_style": "grid-style",
+        "additional_banner_style": "list-style",
+        "enable_masonry_reverse": false,
+        "blog_bg_color": "",
+        "blog_link_color": "",
+        "blog_link_hover_color": "",
+        "blog_text_color": "",
+        "blog_icon_color": "",
+        "blog_button_bg_color": "",
+        "blog_button_text_color": "",
+        "blog_button_bg_hover_color": "",
+        "blog_button_text_hover_color": "",
+        "blog_link_color_overlay": "",
+        "blog_link_hover_color_overlay": "",
+        "blog_text_color_overlay": "",
+        "blog_icon_color_overlay": "",
+        "blog_button_bg_color_overlay": "",
+        "blog_button_text_color_overlay": "",
+        "blog_button_bg_hover_color_overlay": "",
+        "blog_button_text_hover_color_overlay": "",
+        "masonry_content_width": "50\/50",
+        "lap_masonry_content_width": "40\/60",
+        "enable_slider": false,
+        "enable_auto_height": true,
+        "items_per_view": 2,
+        "column_gap": "30",
+        "slider_autoplay": 0,
+        "dots": true,
+        "carousel_pagination_alignment": "center_pagination",
+        "arrows": true,
+        "nav_arrow_position": "center-navigation",
+        "center_nav_arrow_alignment": "outside_container",
+        "navigation_button_color": "",
+        "navigation_button_icon_color": "",
+        "navigation_button_hover_color": "",
+        "navigation_button_hover_icon_color": "",
+        "navigation_dot_color": "",
+        "navigation_dot_active_color": "",
+        "custom_class_name": ""
+      }
+    }
+  },
+  "order": [
+    "041c9bd7-8c45-44fa-8f5d-d16c27cc8c3e",
+    "5208e647-13f0-4258-9013-f207e51462d1",
+    "e73cf01f-04ac-45d8-a5fa-04560211b588",
+    "main",
+    "7a36cd27-d8f2-476f-8e13-3d1ab8f77e64"
+  ]
+}

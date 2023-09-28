@@ -1,0 +1,100 @@
+{% schema %}
+{
+  "name": "Related Blog Posts",
+  "class": "related-blog-posts",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Related Blog Posts"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="related-blog-posts-container container">
+  <h1>MORE {{ blog.handle | upcase }}</h1>
+  <div class="grid-container">
+    {% assign count = 0 %}
+    {% for tag in article.tags %}
+      {% for article in blog.articles %}
+        {% if article.tags contains tag %}
+          {% if count < 4 %}
+            {% assign count = count | plus: 1 %}
+            <div class="grid-item">
+              <a href="{{ article.url }}">
+                <div class="image-wrapper">
+                  <div class="image-container">
+                    <div class="image-inner">
+                      <img src="{{ article.image.src | image_url }}" alt="{{ article.title }}" />
+                    </div>
+                  </div>
+                </div>
+                <h4>{{ article.title }}</h4>
+                <p>{{ article.excerpt }}</p>
+              </a>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+
+<style>
+.related-blog-posts-container {
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.grid-item a {
+  text-decoration: none;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-item h4 {
+  margin-top: 1rem;
+}
+
+.grid-item p {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .grid-item .image-container {
+    height: 8rem !important;
+  }
+}
+</style>

@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "f7f5c1fd-5640-4d14-b403-b6540675d4d2": {
+      "type": "blog-nav",
+      "custom_css": [
+        ".banner-container h1,.banner-container p {color: #1f3451;}",
+        ".banner-container {width: 100%; border: none !important; flex-direction: column;}"
+      ],
+      "settings": {
+        "blog_description": ""
+      }
+    },
+    "ed5c0146-c05e-43a9-a711-7160552ae790": {
+      "type": "blog-post-hero",
+      "custom_css": [
+        ".blog-post-hero-container {border: none !important; width: 100%; padding: 0; flex-direction: column;}",
+        ".blog-post-hero-container h2,.blog-post-hero-container p {color: #1f3451 !important;}",
+        ".blog-post-hero-container a,.blog-post-hero-container p {font-family: \"AcuminVariableConcept\" !important;}",
+        ".blog-post-hero-container .author-byline {font-weight: 600 !important;}"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-article-template",
+      "custom_css": [
+        ".dt-sc-blog-single {background-color: #f4f1ec;}",
+        ".dt-sc-blog-single .container {border: none !important; color: #1f3451; width: 50%; padding-left: 0px; padding-right: 0px;}",
+        ".main-article-container p,.main-article-container h1,.main-article-container h2,.main-article-container h3,.main-article-container h4,.main-article-container li {text-align: left; color: #1f3451;}",
+        ".main-blog-container p > img {width: 100%;}",
+        ".main-blog-container p > video {width: 100%;}"
+      ],
+      "settings": {
+        "show_blog_author": false,
+        "show_blog_date": false,
+        "show_blog_tag": false,
+        "social_sharing_blog": false,
+        "blog_meta_color": "#000000",
+        "blog_meta_icon_color": "#000000"
+      }
+    },
+    "d3552e25-269a-430c-a767-556d42f61f16": {
+      "type": "related-blog-posts",
+      "custom_css": [
+        ".related-blog-posts .container p {line-height: 125%;}",
+        ".related-blog-posts .container {border: none !important; width: 80% !important; margin: auto !important;}",
+        ".related-blog-posts {background-color: #f4f1ec;}"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "f7f5c1fd-5640-4d14-b403-b6540675d4d2",
+    "ed5c0146-c05e-43a9-a711-7160552ae790",
+    "main",
+    "d3552e25-269a-430c-a767-556d42f61f16"
+  ]
+}

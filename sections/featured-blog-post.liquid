@@ -1,0 +1,130 @@
+{% if section.settings.featured_post %}
+  {% unless current_tags %}
+    <div class="featured-post-container container">
+      <div class="featured-post">
+        <a href="{{ section.settings.featured_post.url }}" class="featured-post-content">
+          <div class="featured-post-image">
+            <div class="image-wrapper">
+              <div class="image-inner">
+                <img src="{{ section.settings.featured_post.image | image_url }}" alt="{{ section.settings.featured_post.image.alt }}">
+              </div>
+            </div>
+          </div>
+          <div class="text-container">
+            <h2>{{ section.settings.featured_post.title }}</h2>
+            <p class="excerpt">{{ section.settings.featured_post.excerpt }}</p>
+            <p class="read-more">Read More</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endunless %}
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Featured Post",
+  "class": "featured-blog-post",
+  "settings": [
+    {
+      "type": "article",
+      "label": "Featured Blog Post",
+      "id": "featured_post"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Post"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.featured-post-container {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-post {
+  display: flex;
+  align-items: center;
+  background-color: #F4F1EC;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.featured-post-content {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+}
+
+.featured-post-image {
+  flex: 0 0 50%; /* Set the width to 50% of the flex container */
+  overflow: hidden;
+}
+
+.image-wrapper {
+  position: relative;
+  padding-top: 100%; /* Maintain the 1:1 aspect ratio */
+}
+
+.image-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.featured-post-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: auto;
+  max-height: 100%; /* Stretch the image height to fit the container */
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem; /* Adjust the spacing between the image and text as needed */
+}
+
+.text-container h2 {
+  margin-bottom: 10px;
+}
+
+.text-container .excerpt,
+.text-container .read-more {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.text .read-more {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .featured-post {
+    align-items: left;
+  }
+  .featured-post-image .image-wrapper {
+    height: 20rem;
+  }
+  .featured-post-content {
+    flex-direction: column;
+    align-items: left;
+  }
+  .text-container {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+{% endstylesheet %}

@@ -1,0 +1,79 @@
+<div class="gallery-row-container container">
+<div class="row-container">
+  {% for block in section.blocks %}
+  {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+    <div class="image-row">
+    <img class="lazyload"
+         src="{{ 'loading.gif' | asset_url }}"
+         data-src="{{ img_url }}"
+         data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+         data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+         data-sizes="auto"            
+         alt="{{ block.settings.image.alt}}">    
+    </div>
+    <noscript>
+      {{ block.settings.image | img_url: '480x480', scale: 2 | img_tag: block.settings.image.alt, 'dt-sc-noscript-image' }}
+    </noscript>      
+  {% endfor %}
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Gallery Row",
+    "class": "gallery-row",
+    "max_blocks": 5,
+    "settings": [],
+    "presets": [
+      {
+      "name": "Gallery Row"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .row-container {
+    display: flex;
+    min-height: 100px; /* Adjust the height value as needed */
+    padding: 1.2rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .image-row {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 18%;
+
+    @media (min-width: 200px) {
+      flex: 0 0 35%; /* mobile */
+    }
+
+    @media (min-width: 769px) {
+      flex: 0 0 25%; /* tablet */
+    }
+  }
+
+  .image-row img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    overflow: visible !important;
+  }
+
+  
+{% endstylesheet %}

@@ -1,0 +1,102 @@
+<div class="banner-container container">
+  <div class="banner-text">
+    <a href="{{ blog.url }}">
+      <h1 class="blog-title">{{ blog.title | upcase }}</h1>
+    </a>
+    <p class="blog-description">{{ section.settings.blog_description }}</p>
+  </div>
+
+  <div class="tag-links">
+    {% for tag in blogs[blog.handle].tags %}
+      <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | upcase }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Nav",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Blog Description",
+      "id": "blog_description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Nav"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.banner-container {
+  background-color: #F4F1EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.blog-description {
+  padding-bottom: 30px;
+}
+
+.tag-links {
+  width: 70% !important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #F4F1EC !important;
+}
+
+.tag-links a {
+  flex: 20%;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.tag-links > a {
+  font-family: neue-haas-grotesk-display, sans-serif !important;
+  color: #1f3451;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+  .tag-links {
+    width: 80% !important;
+  }
+  
+  .tag-links a {
+    flex: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Styles for mobile devices */
+  .tag-links a {
+    flex: 50%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .tag-links {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    width: 90% !important;
+  }
+}
+{% endstylesheet %}

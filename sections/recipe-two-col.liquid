@@ -1,0 +1,117 @@
+{% schema %}
+{
+  "name": "Recipe Details",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "ingredients",
+      "label": "Ingredients Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "instructions",
+      "label": "Instructions Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recipe Details",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="recipe-container container">
+  <div class="two-col-container">
+    <div class="column-left">
+      {% if section.settings.ingredients %}
+        <img src="{{ section.settings.ingredients | img_url }}" alt="Ingredients">
+      {% endif %}
+      <div class="content-container">
+        {{ article.metafields.ingredients.list }}
+      </div>
+    </div>
+    <div class="column-right">
+      {% if section.settings.instructions %}
+        <img src="{{ section.settings.instructions | img_url }}" alt="Instructions">
+      {% endif %}
+      <div class="content-container">
+        {{ article.metafields.instructions.list }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .recipe-details {
+    background-color: #F4F1EC;
+  }
+  
+  .two-col-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .column-left {
+    margin-right: 2rem;
+  }
+
+  .content-container > ul {
+    list-style-type: square;
+  }
+
+  .content-container > ol {
+    list-style-type: decimal;
+  }
+
+  .column-left > .content-container {
+    border: 1px solid #1f3451;
+    background-color: #F4F1EC;
+  }
+
+  .content-container {
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .column-left img,
+.column-right img {
+  height: 5rem;
+  object-fit: contain;
+}
+
+  .column-right img {
+    max-width: 50%;
+  }
+
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .two-col-container {
+      flex-direction: column;
+    }
+    .column-left {
+      flex: 1;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .column-right img {
+      max-width: 80%;
+    }
+  }
+
+  @media only screen and (min-width: 425px) {
+    .recipe-container {
+      width: 80% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .column-right img {
+      max-width: 40%;
+    }
+  }
+</style>
