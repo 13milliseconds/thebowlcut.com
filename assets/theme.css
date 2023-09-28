@@ -2142,7 +2142,7 @@ hr {
     background-color: #fff;
     background-size: cover;
   background-image:url(//cdn.shopify.com/s/files/1/3099/9934/t/5/assets/password_bg_img.jpg?v=14614367451507532344);
-    color: $colorTextBody;
+    /* color: $colorTextBody; */
     display: table;
     height: 100%;
     width: 100%; position: absolute;
@@ -2252,10 +2252,6 @@ hr {
 
 .password-powered-by {
     margin-top: 50px;
-}
-
-.product-title{
-  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 749px) {
@@ -4309,7 +4305,7 @@ h1.product-single__title, .product-single__title.h1 {
     align-self: flex-end;
     text-align: right;
 }
-@font-face {
+/* @font-face {
   font-family: "AcuminVariableConcept";
   src: url([{ "AcuminVariableConcept" | asset_url }]) format("otf");
-}
+} */
