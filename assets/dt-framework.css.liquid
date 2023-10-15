@@ -1,3 +1,9 @@
+:root{
+  --font-family--neue-haas: neue-haas-grotesk-display, sans-serif;
+
+  --color-red-300: #c6624e;
+}
+
 /***********************************************************************************/
 /*Reset*/
 /***********************************************************************************/
@@ -116,6 +122,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
+  font-weight: 300;
   font: inherit;
   background: 0 0;
   outline: 0
@@ -595,7 +602,7 @@ template {
 /*Base*/
 /***********************************************************************************/
 body {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   background-color: var(--DTBodyBGColor);
   color: var(--DTColor_Body);
 }
@@ -608,7 +615,7 @@ optgroup {
   text-transform: none;
   font-weight: normal;
   letter-spacing: 0;
-  font-family: var(--DTFontTypo_Body);
+  font-family: var(--font-family--neue-haas);
   font-size: var(--DTFontSizeBase);
   line-height: var(--DT_Body_Line_Height);
   color: var(--DTColor_Body);
@@ -808,7 +815,7 @@ h6 {
   line-height: var(--DT_Heading_Line_Height);
   margin-top: 30px;
   margin-bottom: 15px;
-  font-family: var(--DTFontTypo_Heading);
+  font-family: var(--font-family--neue-haas);
   font-weight: var(--font-weight-header);
 }
 h1:empty,
@@ -2761,6 +2768,8 @@ div[class*="sidebar"] .sidebar.list_style .filter-panel li:before {
   color: var(--DTLinkHoverColor);
 }
 
+/* Product Desktop */
+
 form[class*=shopify-product] > div {
   display: flex;
   align-items: center;
@@ -2783,9 +2792,11 @@ form[class*=shopify-product] > div.attributes-hidden {
 form[class*=shopify-product] > div.attributes-visible {
   ; /*display:block*/
 }
+
 form[class*=shopify-product] > div.product-item-caption-select {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
+
 form[class*=shopify-product] .dt-sc-qty {
   width: 100%;
   display: flex;
@@ -3265,7 +3276,6 @@ a.cart__remove.close_icon {
 
 .cart_table .cart-title a {
   font-size: var(--DTFontSize_H5);
-  font-family: var(--DTFontTypo_Heading)
 }
 .cart_table .btn_actions {
   display: flex;
@@ -5287,8 +5297,8 @@ ul.dt-nav > li > a {
   margin: 20px 10px !important;
 }
 .dt-sc-video-banner-inner h4.dt-sc-main-title {
-  font-size: 30px !important;
-  font-weight: 600 !important;
+  font-size: 30px;
+  font-weight: 600;
 }
 .dt-sc-video-banner-inner a.dt-sc-btn {
   color: #ffffff;
@@ -5300,7 +5310,7 @@ ul.dt-nav > li > a {
   padding: 10px 30px !important;
 }
 .dt-sc-video-banner-inner a.dt-sc-btn:hover {
-  background: #c6624e !important;
+  background: var(--color-red-300) !important;
 }
 span.text-to-left-space {
   padding-left: 60px;
@@ -5392,7 +5402,7 @@ div#shopify-section-template--15760234873015__23637b52-da3b-4548-a4b8-d3e6690837
   margin-bottom: 20px !important;
 }
 .philosophy-text h4 {
-  line-height: 56px;
+  line-height: 1em;
   font-size: 72px;
   font-weight: 700;
   -webkit-text-stroke: 2px #e33048;
@@ -5555,32 +5565,34 @@ div#shopify-section-template--15760234873015__899635f5-3582-4c23-b9c2-32fbe54848
   border-top: 1px solid #e33048;
   border-bottom: none !important;
 }
+
+/* Footer Desktop */
 .site-footer__top .container {
-  border: none !important;
+  border: none;
 }
 footer .site-footer__bottom .container {
-  border: none !important;
+  border: none;
 }
 .footer__item--21ea0c66-a6e0-4431-96f1-672193b7043e.footer-newsletter {
-  width: 100% !important;
-  max-width: 50% !important;
-  padding-right: 15% !important;
-  border-right: 1px dashed #c6624e;
+  width: 100%;
+  max-width: 50%;
+  padding-right: 15%;
+  border-right: 1px dashed var(--color-red-300);
 }
 .footer__item--6bf357de-7846-4852-b91a-3193e6d721f9.footer-links {
-  width: 12% !important;
+  width: 12%;
 }
 .footer__item--9410496a-ba31-4b9d-9d4d-784d80e06fc4.footer-links {
-  width: 12% !important;
+  width: 12%;
 }
 .footer__item--5cc1962b-e187-4727-ab4c-8e38ac2df03e.footer-links {
-  width: 12% !important;
+  width: 12%;
 }
 footer .site-footer__bottom .container {
-  padding: 0 50px !important;
+  padding: 0 50px;
 }
 footer .site-footer__bottom:before {
-  background-color: #c6624e !important;
+  background-color: var(--color-red-300);
 }
 
 
@@ -5624,7 +5636,7 @@ footer .site-footer__bottom:before {
   border-bottom: 1px solid #adadad !important;
   padding: 110px 0;
   font-size: 54px !important;
-  font-family: sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-weight: 700 !important;
 }
 .reccipes-cstm h4.dt-sc-main-heading {
@@ -6026,8 +6038,8 @@ button.text-link.cart__note-add {
   padding: 10px 30px !important;
 }
 .swatch .not_color.swatch-element input:checked + label {
-  color: #c6624e !important;
-  border-color: #c6624e !important;
+  color: var(--color-red-300) !important;
+  border-color: var(--color-red-300) !important;
 }
 .product-description-product-template .product-price li .money {
   color: #000 !important;
@@ -6080,7 +6092,7 @@ section#shopify-section-template--15760235036855__c2c59c36-1c78-42c6-ba24-674591
     min-height: 66px !important;
   }
   .site-footer .footer__title {
-    font-size: 16px !IMPORTANT;
+    font-size: 16px;
   }
   .pw-col-lg-3.pw-col-md-6 {
     vertical-align: top;
@@ -6314,7 +6326,66 @@ section#shopify-section-template--15760235036855__c2c59c36-1c78-42c6-ba24-674591
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767px) {
+  /* Home Mobile*/
+  .home-video-banner .container {
+    padding: 0;
+  }
+  
+  .home-video-banner h4.dt-sc-main-title {
+    font-size: 2rem;
+    line-height: 1.2em;
+  }
+
+  .template-index .dt-sc-section-wrapper .row{
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .template-index .dt-sc-featured-collection-section .dt-sc-collection-banner {
+    min-height: 150px!important;
+  }
+
+  .template-index .images-container{
+    flex-flow: row;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .template-index .images-container > .image-container{
+    flex: 1;
+  }
+
+  /* Our Story Mobile */
+  #about-bowlcut-all-natural-char-siu-amp-chinese-chili-crisp-sauces .big_red span{
+    font-size: 3rem!important;
+  }
+
+  /* Footer Mobile*/
+  footer div[class*="dt-sc-flex"]{
+    flex-flow: row wrap;
+  }
+  .footer__item--21ea0c66-a6e0-4431-96f1-672193b7043e.footer-newsletter {
+    max-width: none;
+    padding-right: 0;
+    border-right: 0;
+  }
+  .footer__item--6bf357de-7846-4852-b91a-3193e6d721f9.footer-links,
+  .footer__item--9410496a-ba31-4b9d-9d4d-784d80e06fc4.footer-links,
+  .footer__item--5cc1962b-e187-4727-ab4c-8e38ac2df03e.footer-links {
+    width: 33.3%;
+  }
+  footer .site-footer__bottom .container {
+    padding: 0 50px;
+  }
+
+  /* Product mobile */
+  .template-product .images-container{
+    flex-flow: row wrap;
+    padding: 0;
+  }
+  .template-product .image-container{
+    flex: 0 0 45%;
+  }
+
   .two-images-section h4.dt-sc-main-title img {
     max-width: 50px !important;
   }
@@ -6338,7 +6409,8 @@ section#shopify-section-template--15760235036855__c2c59c36-1c78-42c6-ba24-674591
     margin-bottom: 10px !important;
   }
   .philosophy-text h4 {
-    font-size: 32px !important;
+    font-size: 2rem;
+    line-height: 1.2em;
   }
   .philosophy-text p {
     font-size: 18px !important;
@@ -6411,7 +6483,6 @@ ul.shogun-tabs.shogun-rounded {
   font-weight: 700;
   -webkit-text-stroke: 2px #e33048;
   letter-spacing: 1px;
-  font-family: 'Nunito Sans';
 }
 .template-blog nav.breadcrumb {
   display: none !important;
@@ -6431,7 +6502,6 @@ ul.shogun-tabs.shogun-rounded {
   font-size: 14px !important;
   font-style: italic;
   font-weight: 500 !important;
-  font-family: 'AT Open Sans';
 }
 .dt-sc-blog-content a.dt-sc-btn {
   background: #1f3351 !important;
@@ -6476,32 +6546,32 @@ footer.site-footer {
 }
 
 h1 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 700 !important;
 }
 h2 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 700 !important;
 }
 h3 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 700 !important;
 }
 h4 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
 h5 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
 h6 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
@@ -6510,32 +6580,32 @@ p {
   font-weight: 300;
 }
 ul.dt-nav > li > a {
-  font-family: neue-haas-grotesk-display, sans-serif;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
 ul.dt-sc-list-inline > li ul.sub-menu-lists > li > a {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
 .site-footer .footer__title {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
 .site-footer li a {
-  font-family: acumin-pro, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 300 !important;
 }
 #s-2220aeb1-5c3f-40d8-b3d0-832c152a100a .shogun-heading-component h1 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
 #s-fa2c5dbc-3fad-47be-892e-c3d34147261c .shogun-form-box label.shogun-form-label {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
@@ -6550,12 +6620,12 @@ input[type=date],
 textarea,
 input.text,
 input[type=search] {
-  font-family: acumin-pro, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 300 !important;
 }
 #s-92117e14-a194-4aba-b830-9e889beb26b0 {
-  font-family: neue-haas-grotesk-display, sans-serif !important;
+  font-family: var(--font-family--neue-haas);
   font-style: normal !important;
   font-weight: 600 !important;
 }
